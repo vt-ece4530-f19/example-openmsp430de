@@ -1,0 +1,444 @@
+
+led.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffa l    d  __interrupt_vector_14	00000000 __interrupt_vector_14
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000fc00 l    d  .rodata	00000000 .rodata
+0000fc00 l    d  .rodata2	00000000 .rodata2
+0000fc04 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000210 l    d  .bss	00000000 .bss
+00000211 l    d  .noinit	00000000 .noinit
+00000212 l    d  .heap	00000000 .heap
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    df *ABS*	00000000 omsp_uart.c
+00000000 l    df *ABS*	00000000 c:/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.2.0/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 c:/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.2.0/430/crtend_no_eh.o
+0000fc00 l     O .rodata2	00000000 __FRAME_END__
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_movedata.o
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 omsp_de1soc.c
+00000000 l    df *ABS*	00000000 omsp_delay.c
+00000000 l    df *ABS*	00000000 srai.o
+00000000 l    df *ABS*	00000000 srli.o
+00000000 l    df *ABS*	00000000 lib_a-memmove.o
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+00000000 l    df *ABS*	00000000 c:/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.2.0/../../../../msp430-elf/lib/430/crtn.o
+00000000 l    df *ABS*	00000000 
+0000fc04 l       .text	00000000 _start
+0000fd62 g     F .text	00000012 putchar
+0000fd54 g     F .text	0000000e uartinit
+0000fd74 g     F .text	00000014 INT_uart_rx
+0000fdae g     F .text	0000004e memmove
+0000fd10 g     F .text	00000006 de1soc_ledr
+0000fd26 g     F .text	00000006 de1soc_hexhi
+0000fd8a g       .text	00000000 .hidden __mspabi_func_epilog_6
+0000fd2c g     F .text	00000006 short_delay
+0000fc04 g     F .text	00000004 __crt0_start
+00000216 g       .heap	00000000 __HeapLimit
+00000216 g       .heap	00000000 __heap_end__
+0000fc08 g     F .text	0000000e __crt0_init_bss
+0000fd32 g     F .text	00000022 long_delay
+00000001 g       *ABS*	00000000 __bsssize
+0000fc2a g     F .text	0000000a __crt0_call_init_then_main
+0000fd94 g       .text	00000000 .hidden __mspabi_func_epilog_1
+0000fd16 g     F .text	00000010 de1soc_hexlo
+0000fd90 g       .text	00000000 .hidden __mspabi_func_epilog_3
+0000fda8 g       .text	00000000 .hidden __mspabi_srli
+0000fc36 g     F .text	0000001c myprintf
+00000210 g     O .bss	00000001 rxdata
+00000212 g       .noinit	00000000 end
+0000fc34  w      .text	00000000 __crt0_run_fini_array
+0000fd9c g       .text	00000000 .hidden __mspabi_srai
+00000010 g       *ABS*	00000000 __romdatacopysize
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000fe14 g       .text	00000000 __msp430_init
+0000fdfc g     F .text	00000016 memset
+0000fc52 g     F .text	0000009a main
+00000212 g       .heap	00000000 __heap_start__
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+0000fe24 g       .text	00000000 __msp430_fini_end
+0000fe12  w      .text	00000000 __crt0_run_preinit_array
+0000fe24 g       *ABS*	00000000 __romdatastart
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00000210 g       .bss	00000000 __bssstart
+0000fd8c g       .text	00000000 .hidden __mspabi_func_epilog_5
+00002200 g       .MSP430.attributes	00000000 __stack
+00000200 g     O .data	00000010 c16
+0000fcec g     F .text	00000024 de1soc_init
+00000210 g       .data	00000000 _edata
+00000212 g       .heap	00000000 _end
+0000fe1e g       .text	00000000 __msp430_init_end
+0000fe12  w      .text	00000000 __crt0_run_init_array
+00000000  w      *ABS*	00000000 __high_bssstart
+00000200 g       .data	00000000 __datastart
+0000fc16 g     F .text	00000014 __crt0_movedata
+0000fd92 g       .text	00000000 .hidden __mspabi_func_epilog_2
+0000fd88 g       .text	00000000 .hidden __mspabi_func_epilog_7
+0000fd8e g       .text	00000000 .hidden __mspabi_func_epilog_4
+0000fe1e g       .text	00000000 __msp430_fini
+
+
+
+Disassembly of section __interrupt_vector_14:
+
+0000fffa <__interrupt_vector_14>:
+    fffa:	74 fd       	interrupt service routine at 0xfd74
+
+Disassembly of section .text:
+
+0000fc04 <__crt0_start>:
+    fc04:	31 40 00 22 	mov	#8704,	r1	;#0x2200
+
+0000fc08 <__crt0_init_bss>:
+    fc08:	3c 40 10 02 	mov	#528,	r12	;#0x0210
+
+0000fc0c <.Loc.81.1>:
+    fc0c:	0d 43       	clr	r13		;
+
+0000fc0e <.Loc.82.1>:
+    fc0e:	3e 40 01 00 	mov	#1,	r14	;
+
+0000fc12 <.Loc.86.1>:
+    fc12:	b0 12 fc fd 	call	#-516		;#0xfdfc
+
+0000fc16 <__crt0_movedata>:
+    fc16:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000fc1a <.Loc.123.1>:
+    fc1a:	3d 40 24 fe 	mov	#-476,	r13	;#0xfe24
+
+0000fc1e <.Loc.126.1>:
+    fc1e:	0d 9c       	cmp	r12,	r13	;
+
+0000fc20 <.Loc.127.1>:
+    fc20:	04 24       	jz	$+10     	;abs 0xfc2a
+
+0000fc22 <.Loc.129.1>:
+    fc22:	3e 40 10 00 	mov	#16,	r14	;#0x0010
+
+0000fc26 <.Loc.131.1>:
+    fc26:	b0 12 ae fd 	call	#-594		;#0xfdae
+
+0000fc2a <__crt0_call_init_then_main>:
+    fc2a:	b0 12 14 fe 	call	#-492		;#0xfe14
+
+0000fc2e <.Loc.203.1>:
+    fc2e:	0c 43       	clr	r12		;
+
+0000fc30 <.Loc.204.1>:
+    fc30:	b0 12 52 fc 	call	#-942		;#0xfc52
+
+0000fc34 <__crt0_run_fini_array>:
+    fc34:	30 41       	ret			
+
+0000fc36 <myprintf>:
+    fc36:	0a 12       	push	r10		;
+    fc38:	09 12       	push	r9		;
+    fc3a:	0a 4c       	mov	r12,	r10	;
+    fc3c:	39 40 62 fd 	mov	#-670,	r9	;#0xfd62
+
+0000fc40 <.L2>:
+    fc40:	6c 4a       	mov.b	@r10,	r12	;
+    fc42:	0c 93       	cmp	#0,	r12	;r3 As==00
+    fc44:	02 20       	jnz	$+6      	;abs 0xfc4a
+    fc46:	30 40 92 fd 	br	#0xfd92		;
+
+0000fc4a <.L3>:
+    fc4a:	1a 53       	inc	r10		;
+    fc4c:	89 12       	call	r9		;
+    fc4e:	30 40 40 fc 	br	#0xfc40		;
+
+0000fc52 <main>:
+    fc52:	0a 12       	push	r10		;
+    fc54:	09 12       	push	r9		;
+    fc56:	08 12       	push	r8		;
+    fc58:	07 12       	push	r7		;
+    fc5a:	06 12       	push	r6		;
+    fc5c:	05 12       	push	r5		;
+    fc5e:	04 12       	push	r4		;
+    fc60:	b0 12 ec fc 	call	#-788		;#0xfcec
+    fc64:	77 42       	mov.b	#8,	r7	;r2 As==11
+    fc66:	55 43       	mov.b	#1,	r5	;r3 As==01
+    fc68:	36 40 00 02 	mov	#512,	r6	;#0x0200
+    fc6c:	38 40 62 fd 	mov	#-670,	r8	;#0xfd62
+
+0000fc70 <.L6>:
+    fc70:	0a 47       	mov	r7,	r10	;
+    fc72:	3a 50 f8 ff 	add	#-8,	r10	;#0xfff8
+    fc76:	09 45       	mov	r5,	r9	;
+    fc78:	34 40 10 fd 	mov	#-752,	r4	;#0xfd10
+
+0000fc7c <.L5>:
+    fc7c:	0c 4a       	mov	r10,	r12	;
+    fc7e:	7d 40 0c 00 	mov.b	#12,	r13	;#0x000c
+    fc82:	b0 12 a8 fd 	call	#-600		;#0xfda8
+    fc86:	0c 56       	add	r6,	r12	;
+    fc88:	6c 4c       	mov.b	@r12,	r12	;
+    fc8a:	88 12       	call	r8		;
+    fc8c:	0c 4a       	mov	r10,	r12	;
+    fc8e:	7d 42       	mov.b	#8,	r13	;r2 As==11
+    fc90:	b0 12 9c fd 	call	#-612		;#0xfd9c
+    fc94:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+    fc98:	0c 56       	add	r6,	r12	;
+    fc9a:	6c 4c       	mov.b	@r12,	r12	;
+    fc9c:	88 12       	call	r8		;
+    fc9e:	0c 4a       	mov	r10,	r12	;
+    fca0:	6d 42       	mov.b	#4,	r13	;r2 As==10
+    fca2:	b0 12 9c fd 	call	#-612		;#0xfd9c
+    fca6:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+    fcaa:	0c 56       	add	r6,	r12	;
+    fcac:	6c 4c       	mov.b	@r12,	r12	;
+    fcae:	88 12       	call	r8		;
+    fcb0:	0c 4a       	mov	r10,	r12	;
+    fcb2:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+    fcb6:	0c 56       	add	r6,	r12	;
+    fcb8:	6c 4c       	mov.b	@r12,	r12	;
+    fcba:	88 12       	call	r8		;
+    fcbc:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    fcc0:	88 12       	call	r8		;
+    fcc2:	0c 49       	mov	r9,	r12	;
+    fcc4:	84 12       	call	r4		;
+    fcc6:	0c 4a       	mov	r10,	r12	;
+    fcc8:	b0 12 16 fd 	call	#-746		;#0xfd16
+    fccc:	0c 4a       	mov	r10,	r12	;
+    fcce:	b0 12 26 fd 	call	#-730		;#0xfd26
+    fcd2:	7c 40 64 00 	mov.b	#100,	r12	;#0x0064
+    fcd6:	b0 12 32 fd 	call	#-718		;#0xfd32
+    fcda:	49 59       	rla.b	r9		;
+    fcdc:	39 f0 ff 00 	and	#255,	r9	;#0x00ff
+    fce0:	1a 53       	inc	r10		;
+    fce2:	0a 97       	cmp	r7,	r10	;
+    fce4:	cb 23       	jnz	$-104    	;abs 0xfc7c
+    fce6:	37 52       	add	#8,	r7	;r2 As==11
+    fce8:	30 40 70 fc 	br	#0xfc70		;
+
+0000fcec <de1soc_init>:
+    fcec:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    fcf0:	20 01 
+    fcf2:	f2 43 22 00 	mov.b	#-1,	&0x0022	;r3 As==11
+    fcf6:	f2 43 2a 00 	mov.b	#-1,	&0x002a	;r3 As==11
+    fcfa:	f2 43 1a 00 	mov.b	#-1,	&0x001a	;r3 As==11
+    fcfe:	f2 43 1e 00 	mov.b	#-1,	&0x001e	;r3 As==11
+    fd02:	f2 43 32 00 	mov.b	#-1,	&0x0032	;r3 As==11
+    fd06:	b0 12 54 fd 	call	#-684		;#0xfd54
+    fd0a:	03 43       	nop			
+    fd0c:	32 d2       	eint			
+    fd0e:	30 41       	ret			
+
+0000fd10 <de1soc_ledr>:
+    fd10:	c2 4c 21 00 	mov.b	r12,	&0x0021	;
+    fd14:	30 41       	ret			
+
+0000fd16 <de1soc_hexlo>:
+    fd16:	c2 4c 19 00 	mov.b	r12,	&0x0019	;
+    fd1a:	7d 42       	mov.b	#8,	r13	;r2 As==11
+    fd1c:	b0 12 9c fd 	call	#-612		;#0xfd9c
+    fd20:	c2 4c 1d 00 	mov.b	r12,	&0x001d	;
+    fd24:	30 41       	ret			
+
+0000fd26 <de1soc_hexhi>:
+    fd26:	c2 4c 31 00 	mov.b	r12,	&0x0031	;
+    fd2a:	30 41       	ret			
+
+0000fd2c <short_delay>:
+    fd2c:	1c 83       	dec	r12		;
+    fd2e:	fe 23       	jnz	$-2      	;abs 0xfd2c
+    fd30:	30 41       	ret			
+
+0000fd32 <long_delay>:
+    fd32:	0a 12       	push	r10		;
+    fd34:	09 12       	push	r9		;
+    fd36:	08 12       	push	r8		;
+    fd38:	0a 4c       	mov	r12,	r10	;
+    fd3a:	39 40 2c fd 	mov	#-724,	r9	;#0xfd2c
+    fd3e:	38 40 10 27 	mov	#10000,	r8	;#0x2710
+
+0000fd42 <.L3>:
+    fd42:	3a 53       	add	#-1,	r10	;r3 As==11
+    fd44:	3a 93       	cmp	#-1,	r10	;r3 As==11
+    fd46:	02 20       	jnz	$+6      	;abs 0xfd4c
+    fd48:	30 40 90 fd 	br	#0xfd90		;
+
+0000fd4c <.L4>:
+    fd4c:	0c 48       	mov	r8,	r12	;
+    fd4e:	89 12       	call	r9		;
+    fd50:	30 40 42 fd 	br	#0xfd42		;
+
+0000fd54 <uartinit>:
+    fd54:	b2 40 b1 01 	mov	#433,	&0x0082	;#0x01b1
+    fd58:	82 00 
+    fd5a:	f2 40 11 00 	mov.b	#17,	&0x0080	;#0x0011
+    fd5e:	80 00 
+    fd60:	30 41       	ret			
+
+0000fd62 <putchar>:
+    fd62:	7d 40 81 00 	mov.b	#129,	r13	;#0x0081
+
+0000fd66 <.L3>:
+    fd66:	fd b2 00 00 	bit.b	#8,	0(r13)	;r2 As==11
+    fd6a:	fd 23       	jnz	$-4      	;abs 0xfd66
+    fd6c:	c2 4c 84 00 	mov.b	r12,	&0x0084	;
+    fd70:	4c 43       	clr.b	r12		;
+    fd72:	30 41       	ret			
+
+0000fd74 <INT_uart_rx>:
+    fd74:	d2 42 85 00 	mov.b	&0x0085,&0x0210	;0x0085
+    fd78:	10 02 
+    fd7a:	f2 40 10 00 	mov.b	#16,	&0x0081	;#0x0010
+    fd7e:	81 00 
+    fd80:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    fd84:	00 00 
+    fd86:	00 13       	reti			
+
+0000fd88 <__mspabi_func_epilog_7>:
+    fd88:	34 41       	pop	r4		;
+
+0000fd8a <__mspabi_func_epilog_6>:
+    fd8a:	35 41       	pop	r5		;
+
+0000fd8c <__mspabi_func_epilog_5>:
+    fd8c:	36 41       	pop	r6		;
+
+0000fd8e <__mspabi_func_epilog_4>:
+    fd8e:	37 41       	pop	r7		;
+
+0000fd90 <__mspabi_func_epilog_3>:
+    fd90:	38 41       	pop	r8		;
+
+0000fd92 <__mspabi_func_epilog_2>:
+    fd92:	39 41       	pop	r9		;
+
+0000fd94 <__mspabi_func_epilog_1>:
+    fd94:	3a 41       	pop	r10		;
+    fd96:	30 41       	ret			
+
+0000fd98 <.L11>:
+    fd98:	3d 53       	add	#-1,	r13	;r3 As==11
+    fd9a:	0c 11       	rra	r12		;
+
+0000fd9c <__mspabi_srai>:
+    fd9c:	0d 93       	cmp	#0,	r13	;r3 As==00
+    fd9e:	fc 23       	jnz	$-6      	;abs 0xfd98
+    fda0:	30 41       	ret			
+
+0000fda2 <.L11>:
+    fda2:	3d 53       	add	#-1,	r13	;r3 As==11
+    fda4:	12 c3       	clrc			
+    fda6:	0c 10       	rrc	r12		;
+
+0000fda8 <__mspabi_srli>:
+    fda8:	0d 93       	cmp	#0,	r13	;r3 As==00
+    fdaa:	fb 23       	jnz	$-8      	;abs 0xfda2
+    fdac:	30 41       	ret			
+
+0000fdae <memmove>:
+    fdae:	0a 12       	push	r10		;
+
+0000fdb0 <.LCFI0>:
+    fdb0:	09 12       	push	r9		;
+
+0000fdb2 <.LCFI1>:
+    fdb2:	0d 9c       	cmp	r12,	r13	;
+    fdb4:	20 2c       	jc	$+66     	;abs 0xfdf6
+
+0000fdb6 <.Loc.69.1>:
+    fdb6:	0a 4d       	mov	r13,	r10	;
+    fdb8:	0a 5e       	add	r14,	r10	;
+
+0000fdba <.Loc.69.1>:
+    fdba:	0c 9a       	cmp	r10,	r12	;
+    fdbc:	1c 2c       	jc	$+58     	;abs 0xfdf6
+
+0000fdbe <.LVL2>:
+    fdbe:	09 4e       	mov	r14,	r9	;
+    fdc0:	39 e3       	inv	r9		;
+
+0000fdc2 <.Loc.74.1>:
+    fdc2:	4d 43       	clr.b	r13		;
+
+0000fdc4 <.L3>:
+    fdc4:	3d 53       	add	#-1,	r13	;r3 As==11
+
+0000fdc6 <.LVL4>:
+    fdc6:	09 9d       	cmp	r13,	r9	;
+    fdc8:	02 20       	jnz	$+6      	;abs 0xfdce
+
+0000fdca <.L10>:
+    fdca:	30 40 92 fd 	br	#0xfd92		;
+
+0000fdce <.L4>:
+    fdce:	0f 4d       	mov	r13,	r15	;
+    fdd0:	0f 5e       	add	r14,	r15	;
+    fdd2:	0f 5c       	add	r12,	r15	;
+    fdd4:	0b 4a       	mov	r10,	r11	;
+    fdd6:	0b 5d       	add	r13,	r11	;
+
+0000fdd8 <.LVL7>:
+    fdd8:	ef 4b 00 00 	mov.b	@r11,	0(r15)	;
+    fddc:	30 40 c4 fd 	br	#0xfdc4		;
+
+0000fde0 <.L6>:
+    fde0:	0b 4d       	mov	r13,	r11	;
+    fde2:	0b 5f       	add	r15,	r11	;
+
+0000fde4 <.Loc.83.1>:
+    fde4:	0a 4c       	mov	r12,	r10	;
+    fde6:	0a 5f       	add	r15,	r10	;
+    fde8:	ea 4b 00 00 	mov.b	@r11,	0(r10)	;
+    fdec:	1f 53       	inc	r15		;
+
+0000fdee <.L5>:
+    fdee:	0e 9f       	cmp	r15,	r14	;
+    fdf0:	f7 23       	jnz	$-16     	;abs 0xfde0
+    fdf2:	30 40 ca fd 	br	#0xfdca		;
+
+0000fdf6 <.L9>:
+    fdf6:	4f 43       	clr.b	r15		;
+    fdf8:	30 40 ee fd 	br	#0xfdee		;
+
+0000fdfc <memset>:
+    fdfc:	4f 43       	clr.b	r15		;
+
+0000fdfe <.L2>:
+    fdfe:	0e 9f       	cmp	r15,	r14	;
+    fe00:	01 20       	jnz	$+4      	;abs 0xfe04
+
+0000fe02 <.Loc.104.1>:
+    fe02:	30 41       	ret			
+
+0000fe04 <.L3>:
+    fe04:	0b 4c       	mov	r12,	r11	;
+    fe06:	0b 5f       	add	r15,	r11	;
+
+0000fe08 <.Loc.101.1>:
+    fe08:	cb 4d 00 00 	mov.b	r13,	0(r11)	;
+    fe0c:	1f 53       	inc	r15		;
+
+0000fe0e <.LVL4>:
+    fe0e:	30 40 fe fd 	br	#0xfdfe		;
+
+0000fe12 <__crt0_run_init_array>:
+    fe12:	30 41       	ret			
+
+0000fe14 <__msp430_init>:
+    fe14:	b0 12 12 fe 	call	#-494		;#0xfe12
+
+0000fe18 <.Loc.19.1>:
+    fe18:	b0 12 12 fe 	call	#-494		;#0xfe12
+
+0000fe1c <.Loc.20.1>:
+    fe1c:	30 41       	ret			
+
+0000fe1e <__msp430_fini>:
+    fe1e:	b0 12 34 fc 	call	#-972		;#0xfc34
+
+0000fe22 <L0>:
+    fe22:	30 41       	ret			
